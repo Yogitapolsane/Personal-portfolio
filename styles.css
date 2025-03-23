@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect: Underline Animation */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Active Link Highlight */
+nav ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+/* Home Page */
+header {
+    height: 100vh;
+    background: linear-gradient(to right, #bcb4c6, #2486ad);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    /* Ensures it doesn't collapse */
+    background-color: white;
+    color: #6a11cb;
+    padding: 12px 24px;
+    /* Increased padding for better spacing */
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #2575fc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Navigation Buttons */
+/*.nav-buttons {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.prev-btn, .next-btn {
+    background-color: #2575fc;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #6a11cb;
+}*/
+/* Navigation Buttons - Now at Bottom */
+.nav-buttons {
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: #2575fc;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #6a11cb;
+}
+
+
+
+/* Profile & Certificates */
+.profile {
+    background-color: rgb(167, 202, 202);
+    
+
+}
+
+
+.profile,
+.certificates,
+.projects {
+    margin-top: 50px;
+    padding-top: 80px;
+}
+
+img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.projects {
+    background-color: rgb(237, 201, 201);
+    height: 100vh;
+}
+
+.certificates {
+    background-color: #bcb4c6;
+}
+/* Contact Page Styling */
+.contact {
+    margin-top: 80px;
+    padding: 40px 20px;
+    background: #9b9d9f;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #2575fc;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #2575fc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form button {
+    background-color: #2575fc;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #6a11cb;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
